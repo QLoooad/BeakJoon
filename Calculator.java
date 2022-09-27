@@ -7,7 +7,7 @@ import java.util.Scanner;
 char 스트링 나오면 연산자 구별(+/*-)
 연산자 앞 모두 한숫자로 더하고 [1][2][3] 일이삼 >> 123백이십삼
 사칙연산 순서 (* / + -)
-1*2/3+4-5
+1+2/3*4-5
 *의 앞뒤 먼저 
 */
 
@@ -24,10 +24,14 @@ public class Calculator {
 		
 		System.out.println(i);
 		
+		char an = '1';
+		char bn = '1';
+
+		
 		
 		int a = 10;
 		int b = 0;
-		System.out.println(a+b);
+		System.out.println(an+bn);
 	}
 
 }
