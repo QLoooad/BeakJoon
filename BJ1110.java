@@ -1,28 +1,27 @@
 import java.util.Scanner;
-
 public class BJ1110 {
-
 	public static void main(String[] args) {
 		
-		System.out.println("0~99중의 아무런 수 입력 : ");
-		//26
-		Scanner setN = new Scanner(System.in);
-		int mainN = setN.nextInt();
+		Scanner sc = new Scanner(System.in);
 		
-		int copyN = mainN;
+		int A = sc.nextInt();
 		int count = 0;
+		int B = A;
 		
 		while(true) {
-			
-			mainN = ((mainN%10)*10+((mainN/10)+(mainN%10)%10));
-			
+			A = ((A%10)*10+(A/10+A%10)%10);
 			count++;
-			
-			if(copyN==mainN) {
+			if(A==B) {
 				break;
 			}
 		}
 		System.out.println(count);
 	}
-
 }
+/*
+ *	26  2+6=8
+ *	68	6+8=14
+ *	84	8+4=12
+ *	42	4+2=6
+ *	26	2+6=8
+ */
