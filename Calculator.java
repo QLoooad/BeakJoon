@@ -24,7 +24,7 @@ public class Calculator {
 		
 		System.out.println(i);
 		
-		char an = '1';
+		char an = '0';
 		char bn = '1';
 
 		
