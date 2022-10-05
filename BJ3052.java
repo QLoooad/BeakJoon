@@ -14,7 +14,7 @@ public class BJ3052 {
         //10개의 예가 주어질때 입력되는 수를 true로 변경
         //42개의 arr는 초기값이 false
         int count = 0;
-        for(boolean i : arr) {  //향상된for문 (처음부터 끝까지 엄추지않고 돌림)
+        for(boolean i : arr) {  //향상된for문 (처음부터 끝까지 엄추지않고 돌림)x
             if(i){   			
                 count++;
                 
