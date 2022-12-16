@@ -1,31 +1,15 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
- 
+import java.util.Arrays;
+
 public class aaaaa {
- 
-	public static void main(String[] args) throws IOException {
- 
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		int T = Integer.parseInt(br.readLine());
-		
-		for(int i = 0; i < T; i++) {
-			
-			String[] str = br.readLine().split(" ");	// 공백 분리
-			String[] arr = new String[T];
-			
-			int R = Integer.parseInt(str[0]);	// String -> int
-			String S = str[1];
-			
-			for(int j = 0; j < S.length(); j++) {
-				for(int k = 0; k < R; k++) {
-					System.out.print(S.charAt(j));
-				}
-			}
-			System.out.println();
-		}
-	}
- 
- 
+    public static int[] divisible(int[] array, int divisor) {
+    	int[] answer = Arrays.stream(array).filter(factor -> factor % divisor == 0).toArray();
+        if(answer.length == 0) answer = new int[] {-1};
+        java.util.Arrays.sort(answer);
+        return answer;
+        }
+    // 아래는 테스트로 출력해 보기 위한 코드입니다.
+    public static void main(String[] args) {
+        int[] array = {5, 9, 7, 10};
+        System.out.println(divisible(array, 5));
+    }
 }
