@@ -10,7 +10,7 @@ public class PG_이상한문자만들기 {
 	public static void main(String[] args) {
 
 		
-		//test
+		//testss
 	}
 
 }
