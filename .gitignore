@@ -111,6 +111,10 @@
 /PG_나누어떨어지는숫자배열.class
 /Divisible.class
 /PG_제일작은수제거.class
+<<<<<<< HEAD
 /PG_제일작은수제거_후추.class
 /BJ9020.class
 /PG제일작은수제거.class
+=======
+/bin/
+>>>>>>> branch 'master' of https://github.com/QLoooad/BeakJoon
