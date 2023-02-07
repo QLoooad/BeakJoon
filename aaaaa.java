@@ -9,7 +9,12 @@ public class aaaaa {
         }
     // 아래는 테스트로 출력해 보기 위한 코드입니다.
     public static void main(String[] args) {
-        int[] array = {5, 9, 7, 10};
-        System.out.println(divisible(array, 5));
+        int n = 1;
+        int k = 0;
+        while( k < 100 ) {
+        	k = k+n;
+        	n = n+1;
+        }
+        System.out.println(k);
     }
 }
