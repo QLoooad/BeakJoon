@@ -8,4 +8,5 @@ public class PG_x간격n개의수 {
         }
         return answer;
     }
+	//test 클론
 }
