@@ -2,7 +2,7 @@ package codingTest;
 
 import java.util.Arrays;
 
-public class PG_최대값최소값 {
+public class PG_최대값최소값Lv2 {
    
 public String solution(String s) {
         
