@@ -1,5 +1,7 @@
 package codingTest;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 
 public class PG_문자열의아름다움 {
@@ -19,15 +21,30 @@ public class PG_문자열의아름다움 {
 
 	public static void main(String[] args) {
 		String str = "baby";
-		System.out.println(solution(str));
+//		System.out.println(solution(str));
 		
+//		List<Character> a = new ArrayList<>();
+//		for (int i = 0; i < str.length(); i++) {
+//			a.add(str.charAt(i));
+//		}
+		String[] strArr = str.split("");
+		StringTokenizer st = new StringTokenizer(str, "");
 		
-		
-		String s = "baby";
-		String[] strArr = s.split("");
-        for(int i = 0; i < strArr.length; i++) {
-        	System.out.println(strArr[i]);
-        }
+		int result = 0;
+		for (int i = 0; i < strArr.length; i++) {
+			String searchStr = st.nextToken().toString();// 1글자씩 꺼내기
+
+			for (int j = 0; j < strArr.length; j++) {
+				if (strArr[i].equals(searchStr)) {
+					int sco = 0;
+					result++;
+				} else {
+
+				}
+
+			}
+		}
+		System.out.println(result);
         
 	}
 
