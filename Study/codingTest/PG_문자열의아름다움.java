@@ -1,7 +1,8 @@
 package codingTest;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class PG_문자열의아름다움 {
@@ -19,7 +20,7 @@ public class PG_문자열의아름다움 {
         return answer;
     }
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		String str = "baby";
 //		System.out.println(solution(str));
 		
@@ -27,24 +28,31 @@ public class PG_문자열의아름다움 {
 //		for (int i = 0; i < str.length(); i++) {
 //			a.add(str.charAt(i));
 //		}
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//		
+//		char[] s = br.readLine().toCharArray();
+//        char[] t = br.readLine().toCharArray();
+        
 		String[] strArr = str.split("");
-		StringTokenizer st = new StringTokenizer(str, "");
-		
-		int result = 0;
-		for (int i = 0; i < strArr.length; i++) {
-			String searchStr = st.nextToken().toString();// 1글자씩 꺼내기
-
-			for (int j = 0; j < strArr.length; j++) {
-				if (strArr[i].equals(searchStr)) {
-					int sco = 0;
-					result++;
-				} else {
-
-				}
-
-			}
-		}
-		System.out.println(result);
+		StringTokenizer st = new StringTokenizer(str);
+		String searchStr = st.nextToken().toString();
+//		int result = 0;
+//		for (int i = 0; i < strArr.length; i++) {
+//			int searchStrNum = 0; // 꺼낸 searchStr의 index
+//			searchStr = st.nextToken().toString();// 1글자씩 꺼내기
+//			
+//			for (int j = 0; j < strArr.length; j++) {
+//				int leng = 0;
+//				leng++;
+//				if (strArr[i].equals(searchStr)) {
+//					result += i - searchStrNum;
+//				} else {
+//
+//				}
+//			}
+//			searchStrNum++;
+//		}
+		System.out.println(searchStr);
         
 	}
 
