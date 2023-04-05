@@ -10,7 +10,7 @@ public class PG_숫자의표현 {
 	public static void main(String[] args) {
 		int n = 15;
 
-		int answer = 1; // 최소값 = 자기 자신
+		int answer = 1;
 
 		for (int i = 1; i <= n / 2; i++) {
 			int sum = i;
